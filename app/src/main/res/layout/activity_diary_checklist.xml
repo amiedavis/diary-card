@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_diary_checklist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.dbt.diarycard.DiaryChecklist">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarUrge"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarPain"
+            android:layout_below="@id/ratingBarUrge"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarSad"
+            android:layout_below="@id/ratingBarPain"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarShame"
+            android:layout_below="@id/ratingBarSad"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarAnger"
+            android:layout_below="@id/ratingBarShame"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarFear"
+            android:layout_below="@id/ratingBarAnger"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarJoy"
+            android:layout_below="@id/ratingBarFear"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp">
+
+        <TextView
+            android:text="Urge"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Urge"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="Pain"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Pain"
+            android:layout_below="@id/Urge"
+            android:layout_marginTop="29dp"/>
+
+        <TextView
+            android:text="Sad"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Sad"
+            android:layout_below="@id/Pain"
+            android:layout_marginTop="29dp"/>
+
+        <TextView
+            android:text="Shame"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Shame"
+            android:layout_below="@id/Sad"
+            android:layout_marginTop="29dp"/>
+
+        <TextView
+            android:text="Anger"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Anger"
+            android:layout_below="@id/Shame"
+            android:layout_marginTop="29dp"/>
+
+        <TextView
+            android:text="Fear"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Fear"
+            android:layout_below="@id/Anger"
+            android:layout_marginTop="29dp"/>
+
+        <TextView
+            android:text="Joy"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Joy"
+            android:layout_below="@id/Fear"
+            android:layout_marginTop="29dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:text="DATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DateTextView"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:text="Action"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Action"
+            android:layout_marginLeft="260dp"/>
+
+        <CheckBox
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxAction"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:text="Meds"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Meds"
+            android:layout_marginLeft="175dp"/>
+
+        <CheckBox
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxMeds"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop ="30dp"/>
+
+        <TextView
+            android:text="Skills"
+            android:textSize="70px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Skills"
+            android:layout_marginLeft="90dp"/>
+
+        <CheckBox
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxSkills"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop ="30dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
